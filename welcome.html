@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-size: 25px;
+            font-family:  Courier, monospace, serif;
+        }
+
+        header {
+            background-size: cover;
+            background-position: center;
+            color: #f30606;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .welcome-container {
+            text-align: center;
+            color: #fbf8f8;
+        }
+
+        .floating-text {
+            position: sticky;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(200px);
+            }
+            30% {
+                transform: translateY(-200px);
+            }
+            100% {
+                transform: translateY(200px);
+            }
+            50% {
+                transform: translateX(300px);
+            }
+            70% {
+                transform: translateX(-300px);
+            }
+        }
+
+        .visit-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #f90cb2;
+            color: #0f0e0e;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .visit-button:hover {
+            background-color: #380aee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome-container">
+        <h1 class="floating-text">Welcome to My Portfolio Website</h1>
+        <p class="floating-text">Explore and enjoy!</p>
+        <a href="https://hardikm121.github.io/Portfolio/" class="visit-button">Visit Website</a>
+    </div>
+</body>
+
+</html>
