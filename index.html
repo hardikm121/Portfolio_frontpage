@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <title>Welcome to My Website</title>
     <style>
         body {
@@ -71,6 +72,24 @@
         .visit-button:hover {
             background-color: #380aee;
         }
+        @media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+    .welcome-container {
+        padding: 50px 0;
+        text-align: center;
+    }
+    .visit-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    
+}
     </style>
 </head>
 
